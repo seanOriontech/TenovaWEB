@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>Tenova Pyromet - MEB</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        window.jQuery || document.write(decodeURIComponent('%3Cscript src="js/jquery.min.js"%3E%3C/script%3E'))
+    </script>
+    <link rel="stylesheet" type="text/css" href="https://cdn3.devexpress.com/jslib/21.1.3/css/dx.common.css" />
+
+    <link rel="stylesheet" type="text/css" href="../css/dx.generic.pyro-scheme.css" />
+    <link rel="stylesheet" type="text/css" href="../css/common.css" />
+    <script src="https://cdn3.devexpress.com/jslib/21.1.3/js/dx.all.js"></script>
+    <script src="../Data/commonData.js"></script>
+    <script src="../Data/RecipeData.js"></script>
+    <script src="../Data/batchData.js"></script>
+    <script src="../Data/OreData.js"></script>
+    <script src="../Data/FluxData.js"></script>
+    <script src="../Data/ResultsStatic.js"></script>
+    <script src="../Data/ReductantData.js"></script>
+    <script src="../Data/RecipeData.js"></script>
+    <script src="CreateRecipe.js"></script>
+
+
+
+    <body class="dx-viewport">
+
+
+
+        <div style="width:100% ;">
+
+
+            <div class="borderGrid" style="width: 80%;border-color:#0A959B;">
+
+                <div style="align-items: right;width:100%">
+                    <table>
+                        <tr>
+                            <td>
+                                <div id="runMEB"></div>
+                            </td>
+                            <td>
+                                <div id="selectMEB"></div>
+                            </td>
+                        </tr>
+                    </table>
+
+                </div>
+                <div class="centerGrid" id="gridContainer" style="font-size: 15px;"></div>
+            </div>
+
+            <div style="width: 80%; margin: auto;">
+                <table class="centerGrid">
+                    <tr style="height: 10px;">
+
+                    </tr>
+                    <tr>
+                        <td style="vertical-align: top;">
+                            <div class="borderGrid" style="border-color:purple;">
+                                <div class="heading" style="color: purple;"> Ore </div>
+                                <div class="centerGrid" id="gridContainerOre" style="font-size: 15px;"></div>
+                            </div>
+                            <div style="height: 10px;"></div>
+                            <div class="borderGrid" style="border-color:#066099;">
+                                <div class="heading" style="color: #066099;"> Flux </div>
+                                <div class="centerGrid" id="gridContainerFlux" style="font-size: 15px;"></div>
+                            </div>
+                            <div style="height: 10px;"></div>
+                            <div class="borderGrid" style="border-color:#6A7B35;">
+                                <div class="heading" style="color: #6A7B35;"> Reductant </div>
+                                <div class="centerGrid" id="gridContainerRed" style="font-size: 15px;"></div>
+                            </div>
+
+                        </td>
+                        <td style="width: 50%;vertical-align: top;">
+                            <div class="borderGrid" style="border-color:#10672E;width: 100%; " style='font-size: 15px;'>
+                                <div class="heading" style="text-align: center;align-content: center;color: #10672E;"> Calculation Assumptions </div>
+                                <div id="Recipe"></div>
+                            </div>
+            </div>
+        </div>
+    </body>
+
+</html>
